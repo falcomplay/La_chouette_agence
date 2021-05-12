@@ -1050,3 +1050,7 @@ blockquote {
 .quote-name {
 	font-size: 14px;
 }
+
+.hidden_link {
+	display: none;
+}
