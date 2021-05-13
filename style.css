@@ -275,6 +275,9 @@ a:hover {
 .row-no-gutters {
 	margin-right: 0;
 	margin-left: 0;
+	display: flex;
+	width: 200px;
+	justify-content: space-around;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -436,8 +439,14 @@ nav .caret {
 }
 
 .mg-md {
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin: 10px 20px 20px 20px;
+}
+@media (max-width: 300px) {
+	.mg-md {
+		width: 100%;
+		margin: 20px 0 20px 0;
+		text-align: center;
+	}
 }
 
 .mg-lg {
@@ -586,6 +595,11 @@ a[data-lightbox]:hover img {
 	bottom: 5px;
 }
 
+@media (max-width: 380px) {
+	.lightbox-caption {
+		margin: auto;
+	}
+}
 .close-lightbox {
 	color: #fff;
 	font-size: 30px;
@@ -677,7 +691,7 @@ a {
 }
 
 p {
-	font-size: 11px;
+	font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -710,7 +724,7 @@ h2 {
 }
 
 h3 {
-	font-size: 15px;
+	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #333333 !important;
@@ -965,6 +979,12 @@ h4 {
 		max-height: 40px;
 		width: auto;
 	}
+	@media (max-width: 300px) {
+		.navbar-brand img {
+			max-height: 32px;
+			width: auto;
+		}
+	}
 	.nav-invert .navbar-header {
 		float: none;
 		width: 100%;
@@ -1039,6 +1059,10 @@ h4 {
 	.bloc-mob-center-text {
 		text-align: center;
 	}
+	.img-responsive {
+		margin: auto;
+		width: 100%;
+	}
 }
 
 blockquote {
@@ -1053,4 +1077,8 @@ blockquote {
 
 .hidden_link {
 	display: none;
+}
+
+img {
+	margin: auto;
 }
