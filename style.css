@@ -1082,3 +1082,7 @@ blockquote {
 img {
 	margin: auto;
 }
+
+textarea {
+	resize: none;
+}
